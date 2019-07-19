@@ -22,12 +22,9 @@ def almostEqual(x, y):
 class Grader(object):
     def __init__(self):
         self.submission_page = 'https://www.coursera.org/api/onDemandProgrammingScriptSubmissions.v1'
-        self.assignment_key = 'S1UqVXp-EeelpgpYPAO2Og'
+        self.assignment_key = 'r2N4iqFlEeeRFQqEddeEzg'
         self.parts = OrderedDict([
-                    ('edAEq', 'max_revenue'),
-                    ('Xn0Ec', 'category_id_with_max_revenue'),
-                    ('CZDVZ', 'num_items_constant_price'),
-                    ('HlAjc', 'total_num_items_sold_var')])
+                    ('1O8kU', 'statistic')])
         self.answers = {key: None for key in self.parts}
 
     @staticmethod

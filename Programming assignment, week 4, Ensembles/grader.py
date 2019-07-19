@@ -16,15 +16,20 @@ def array_to_hash(x):
     return hash(tuple(map(float, x_tupled)))
 
 def almostEqual(x, y):
-    return abs(x - y) < 1e-3
+    return abs(x - y) < 1e-5
 
 
 class Grader(object):
     def __init__(self):
         self.submission_page = 'https://www.coursera.org/api/onDemandProgrammingScriptSubmissions.v1'
-        self.assignment_key = 'r2N4iqFlEeeRFQqEddeEzg'
+        self.assignment_key = 'Lhay-55JEeet3xIBvGMumA'
         self.parts = OrderedDict([
-                    ('1O8kU', 'statistic')])
+                        ('EyiFH', 'best_alpha'),
+                        ('XH82R', 'r2_train_simple_mix'),
+                        ('BHeRs', 'r2_test_simple_mix'),
+                        ('MkwCS', 'r2_train_stacking'),
+                        ('j4Adb', 'r2_test_stacking'),
+                     ])
         self.answers = {key: None for key in self.parts}
 
     @staticmethod
